@@ -1,0 +1,29 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  image: node:16
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+
+test:
+  stage: test
+  image: node:16
+  script:
+    - npm test
+
+deploy:
+  stage: deploy
+  image: node:16
+  script:
+    - echo "Deploying to server"
+    #deploy command rsync or SSH for uploading docs to Server
+  only:
+    - main
