@@ -1,29 +1,36 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
 stages:
   - build
   - test
   - deploy
 
+variables:
+  DOCKER_DRIVER: overlay2
+  GITHUB_TOKEN: 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
+
 build:
   stage: build
-  image: node:16
   script:
-    - npm install
-    - npm run build
+    - docker build -t my-app .
+    - docker save my-app | gzip > my-app.tar.gz
   artifacts:
     paths:
-      - build/
+      - my-app.tar.gz
 
 test:
   stage: test
-  image: node:16
   script:
-    - npm test
+    - docker load < my-app.tar.gz
+    - docker run --rm my-app npm test
 
 deploy:
   stage: deploy
-  image: node:16
   script:
     - echo "Deploying to server"
-    #deploy command rsync or SSH for uploading docs to Server
+    # Add your deployment script here, e.g., rsync or SSH commands
   only:
     - main

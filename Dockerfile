@@ -16,5 +16,5 @@ COPY . .
 # Expose the application port
 EXPOSE 3000
 
-# Run the application
+# Run the application in preview mode
 CMD ["npm", "start"]

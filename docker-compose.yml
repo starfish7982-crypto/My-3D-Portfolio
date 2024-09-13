@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    image: 3d_portfolio:latest  # 這裡使用你構建的 image
+    build:
+      context: .  # 使用當前目錄的 Dockerfile 來構建 image
+    ports:
+      - "8080:3000"  # 將主機的 8080 端口映射到容器內的 3000 端口
+    volumes:
+      - .:/app  # 將當前目錄掛載到容器內的 /app
+      - /app/node_modules  # 避免 node_modules 被主機覆蓋
+    command: npm start  # 啟動應用
+    environment:
+      - CHOKIDAR_USEPOLLING=true  # 讓 Vite 在 Docker 中使用文件輪詢
+    stdin_open: true  # 讓容器保持開啟狀態以便進行開發
+    tty: true
