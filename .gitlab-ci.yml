@@ -10,7 +10,6 @@ stages:
 
 variables:
   DOCKER_DRIVER: overlay2
-  GITHUB_TOKEN: #*
 
 build:
   stage: build
