@@ -2,7 +2,10 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <section className="relative flex lg:flex-row flex-col max-container">
+
+
+    </section>
   )
 }
 
