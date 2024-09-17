@@ -11,11 +11,13 @@ const Projects = () => {
         My <span className="blue-gradient_text font-semibold drop-shadow">Projects</span>
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>I've embarked on numerous projects throughout the years, but these are
-        the ones I hold closest to my heart. Many of them are open-source, so if
-        you come across something that piques your interest, feel free to
-        explore the codebase and contribute your ideas for further enhancements.
-        Your collaboration is highly valued!
+        <p>
+        Over the years, I have developed several projects that showcase my passion 
+        for software development and problem-solving. These projects reflect my skills 
+        and dedication to creating practical and innovative solutions. If you come across 
+        something that piques your interest, feel free to explore the codebase and contribute 
+        your ideas for further enhancements. Your collaboration is highly valued! 
+        If you have any questions or want to learn more, don't hesitate to reach out.
         </p>
       </div>
 

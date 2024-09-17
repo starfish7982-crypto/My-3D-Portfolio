@@ -184,33 +184,34 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: summiz,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'My 3D Portfolio',
+        description: 'Developed a 3D web portfolio using modern web technologies, including React, Vite, and Three.js. The portfolio showcases my projects with dynamic 3D elements.',
+        link: 'https://github.com/starfish7982-crypto/My-3D-Portfolio',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: '3D Printing Solutions for Healthcare',
+        description: 'Developed projects for 3D printing products, including dental molds, in collaboration with dental professionals.',
+        link: 'https://github.com/starfish7982-crypto/Ackuretta',
     },
     {
-        iconUrl: car,
+        iconUrl: estate,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'My E-commerce Business',
+        description: 'Developed a WordPress site for my own e-commerce business, optimizing the platform for SEO across various channels to enhance search visibility and drive higher revenue.',
+        link: 'https://github.com/starfish7982-crypto/My-E-commerce-Business',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
+        name: 'Restaurant Management System',
+        description: 'Developed a restaurant management system as part of our graduation project with a 6-person team, in collaboration with a software technology company.',
+        link: 'https://github.com/starfish7982-crypto/III-Java-Training-Course',
+    }
+    /*,
     {
         iconUrl: estate,
         theme: 'btn-back-black',
@@ -225,4 +226,5 @@ export const projects = [
         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
         link: 'https://github.com/adrianhajdin/project_ai_summarizer',
     }
+    */
 ];
