@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { outlier, season, ackuretta, go1010, msi } from "../assets/images";
 import {
     car,
     contact,
@@ -28,14 +28,45 @@ import {
 
 export const skills = [
     {
+        imageUrl: html,
+        name: "HTML",
+        type: "Frontend",
+    },
+
+    {
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
     },
     {
-        imageUrl: express,
-        name: "Express",
+        imageUrl: sass,
+        name: "Sass",
+        type: "Frontend",
+    },
+    {
+        imageUrl: tailwindcss,
+        name: "Tailwind CSS",
+        type: "Frontend",
+    },
+    {
+        imageUrl: javascript,
+        name: "JavaScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: nodejs,
+        name: "Node.js",
         type: "Backend",
+    },
+    {
+        imageUrl: react,
+        name: "React",
+        type: "Frontend",
     },
     {
         imageUrl: git,
@@ -47,17 +78,8 @@ export const skills = [
         name: "GitHub",
         type: "Version Control",
     },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
+    
+    /*{
         imageUrl: mongodb,
         name: "MongoDB",
         type: "Database",
@@ -78,90 +100,83 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: nodejs,
-        name: "Node.js",
+        imageUrl: express,
+        name: "Express",
         type: "Backend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
     },
     {
         imageUrl: redux,
         name: "Redux",
         type: "State Management",
     },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
+    */
+    
 ];
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        title: "AI Trainer",
+        company_name: "Outlier",
+        icon: outlier,
         iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
+        date: "Jun 2024 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Evaluate AI model responses, identify errors, and provide feedback for prompt alignment.",
+            "Ensure high-quality, accurate AI outputs by correcting identified issues.",
+            "Contribute to continuous AI training for better accuracy and efficiency.",
         ],
     },
+    {
+        title: "Founder & Software Engineer",
+        company_name: "SEason",
+        icon: season,
+        iconBg: "#FFFFFF",
+        date: "Sep 2016 - Jun 2023",
+        points: [
+            "Developed and managed a WordPress-based E-commerce platform to efficiently promote and sell clothing via Shopee,increasing website exposure and boosting sales by 25%, while enhancing the overall customer experience.",
+            "Automated the product listing process by creating web scraping scripts with Octoparse, reducing manual data entry time by 50% and significantly improving operational efficiency.",
+            "Designed and deployed a Python script to automatically process and crop images, enhancing product presentation and ensuring optimal display on the website, which improved user engagement.",
+            "Applied SEO strategies to the WordPress site, which doubled the number of followers, improved search engine rankings, and increased website traffic, leading to an enhanced user experience.",
+        ],
+    },
+    {
+        title: "Software Engineer",
+        company_name: "Ackuretta",
+        icon: ackuretta,
+        iconBg: "#e4c7ed",
+        date: "Mar 2018 - Apr 2021",
+        points: [
+            "Built a mobile-friendly web system from scratch with dynamic features using TypeScript and Angular.",
+            "Developed projects for 5 products, enhancing features and performance, ensuring optimized web experiences through RESTful API integration.",
+            "Reduced processing time for users by 50% through optimizing the 3D printing process on the website.",
+            "Designed wireframes and layouts that improved the user experience by utilizing SOA principles.",
+        ],
+    },
+    {
+        title: "Software Engineer",
+        company_name: "Go1010 International Limited",
+        icon: go1010,
+        iconBg: "#b7e4c7",
+        date: "Aug 2016 - Jul 2017",
+        points: [
+            "Developed WordPress themes for corporate clients with design teams, boosting retention, user engagement, and brand consistency, while increasing new business by 10%.",
+            "Managed feature enhancements updates for a high-traffic site (10,000+ monthly visitors), using TortoiseSVN",
+            "Developed custom WordPress functionalities tailored to meet unique client needs, delivering pixel-perfect designs for e-commerce and content-heavy sites.",
+        ],
+    },
+    {
+        title: "Assistant Engineer",
+        company_name: "MSI",
+        icon: msi,
+        iconBg: "#a2d2ff",
+        date: "Oct 2013 - Jun 2015",
+        points: [
+            "Managed hardware equipment including memory, hard drives, motherboards, graphics cards, and CPUs, ensuring optimal performance.",
+            "Coordinated lab reservations to maximize resource utilization and minimize downtime.",
+            "Implemented efficient hardware management processes, leading to improved system reliability.",
+            "Facilitated seamless lab operations, contributing to enhanced project timelines and outcomes.",
+        ],
+    }
 ];
 
 export const socialLinks = [
@@ -173,12 +188,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/starfish7982-crypto',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/starfish7982/',
     }
 ];
 
