@@ -23,10 +23,67 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    wordpress,
+    tortoise,
+    java,
+    php,
+    python,
+    jquery,
+    angular,
+    cakephp,
+    bootstrap,
+    mysql,
+    sqlserver,
+    windows,
+    linux,
+    netbeans,
+    vscode,
+    tomcat,
+    apache,
+    android,
+    postman,
+    vmware,
+    axure,
+    figma,
+    adobexd,
+    maven,
+    trello,
+    googlecalendar
+
 } from "../assets/icons";
 
 export const skills = [
+    {
+        imageUrl: java,
+        name: "Java",
+        type: "Backend",
+    },
+    {
+        imageUrl: php,
+        name: "PHP",
+        type: "Frontend",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Backend",
+    },
+    {
+        imageUrl: javascript,
+        name: "JavaScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: jquery,
+        name: "jQuery",
+        type: "Frontend",
+    },
     {
         imageUrl: html,
         name: "HTML",
@@ -49,14 +106,24 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
+        imageUrl: cakephp,
+        name: "CakePHP",
+        type: "Frameworks",
     },
     {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
+        imageUrl: bootstrap,
+        name: "Bootstrap",
+        type: "Frameworks",
+    },
+    {
+        imageUrl: react,
+        name: "React",
+        type: "Frameworks",
+    },
+    {
+        imageUrl: angular,
+        name: "Angular",
+        type: "Frameworks",
     },
     {
         imageUrl: nodejs,
@@ -64,9 +131,24 @@ export const skills = [
         type: "Backend",
     },
     {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
+        imageUrl: mysql,
+        name: "MySQL",
+        type: "Databases",
+    },
+    {
+        imageUrl: sqlserver,
+        name: "SQL Server",
+        type: "Databases",
+    },
+    {
+        imageUrl: windows,
+        name: "Windows",
+        type: "Systems",
+    },
+    {
+        imageUrl: linux,
+        name: "Linux",
+        type: "Systems",
     },
     {
         imageUrl: git,
@@ -78,6 +160,83 @@ export const skills = [
         name: "GitHub",
         type: "Version Control",
     },
+    {
+        imageUrl: tortoise,
+        name: "TortoiseSVN",
+        type: "Version Control",
+    },
+    {
+        imageUrl: netbeans,
+        name: "NetBeans",
+        type: "Software & Tools - IDE",
+    },
+    {
+        imageUrl: vscode,
+        name: "Visual Studio Code",
+        type: "Software & Tools - IDE",
+    },
+    {
+        imageUrl: tomcat,
+        name: "Tomcat",
+        type: "Software & Tools",
+    },
+    {
+        imageUrl: apache,
+        name: "Apache",
+        type: "Software & Tools",
+    },
+    {
+        imageUrl: android,
+        name: "Android App Development",
+        type: "Software & Tools",
+    },
+    {
+        imageUrl: wordpress,
+        name: "WordPress",
+        type: "Software & Tools",
+    },
+    {
+        imageUrl: postman,
+        name: "Postman",
+        type: "Software & Tools",
+    },
+    {
+        imageUrl: vmware,
+        name: "VMware",
+        type: "Software & Tools",
+    },
+    {
+        imageUrl: axure,
+        name: "Axure RP",
+        type: "Software & Tools",
+    },
+    {
+        imageUrl: figma,
+        name: "Figma",
+        type: "Software & Tools",
+    },
+    {
+        imageUrl: adobexd,
+        name: "Adobe XD",
+        type: "Software & Tools",
+    },
+    {
+        imageUrl: maven,
+        name: "Maven",
+        type: "Project Management",
+    },
+    {
+        imageUrl: trello,
+        name: "Trello",
+        type: "Project Management",
+    },
+    {
+        imageUrl: googlecalendar,
+        name: "Google Calendar",
+        type: "Project Management",
+    },
+    
+    
     
     /*{
         imageUrl: mongodb,
