@@ -6,10 +6,10 @@ export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.glb'],
   server: {
-    host: true,  // 允许通过网络访问
-    port: 3000,   // 设置端口为3000
+    host: true,  // allow access
+    port: 3000,   // port set 3000
     watch: {
-      usePolling: true,  // 啟用輪詢
+      usePolling: true,  // Enable polling
     }
   }
 })

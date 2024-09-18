@@ -52,7 +52,9 @@ import vmware from './vmware.svg'
 import windows from './windows.svg'
 import angular from './angular.svg'
 import vscode from './vscode.svg'
-
+import vite from './vite.svg'
+import docker from './docker.svg'
+import gitlab from './gitlab.svg'
 
 export {
     css,
@@ -108,5 +110,8 @@ export {
     vmware,
     windows,
     angular,
-    vscode
+    vscode,
+    vite,
+    docker,
+    gitlab
 }

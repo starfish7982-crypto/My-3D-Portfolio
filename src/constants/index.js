@@ -49,7 +49,10 @@ import {
     adobexd,
     maven,
     trello,
-    googlecalendar
+    googlecalendar,
+    vite,
+    docker,
+    gitlab
 
 } from "../assets/icons";
 
@@ -161,6 +164,11 @@ export const skills = [
         type: "Version Control",
     },
     {
+        imageUrl: gitlab,
+        name: "GitLab",
+        type: "Version Control",
+    },
+    {
         imageUrl: tortoise,
         name: "TortoiseSVN",
         type: "Version Control",
@@ -183,6 +191,16 @@ export const skills = [
     {
         imageUrl: apache,
         name: "Apache",
+        type: "Software & Tools",
+    },
+    {
+        imageUrl: vite,
+        name: "Vite",
+        type: "Software & Tools",
+    },
+    {
+        imageUrl: docker,
+        name: "Docker",
         type: "Software & Tools",
     },
     {
