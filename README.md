@@ -1,7 +1,7 @@
 # My-3D-Portfolio
 # React + Vite
 
-![My 3D Portfolio Website](https://i.imgur.com/29RkVI4.png)
+<a href="https://www.sally-lin.com/">![My 3D Portfolio Website](https://i.imgur.com/29RkVI4.png)</a>
 
 
 <ul>
