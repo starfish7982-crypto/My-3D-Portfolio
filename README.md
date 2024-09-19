@@ -17,6 +17,9 @@
     <li>
         <b>Build Tools:</b>Vite
     </li>
+    <li>
+        <b>Cloud & Hosting:</b> AWS (S3, CloudFront, Route 53, Certificate Manager)
+    </li>
 </ul>
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
