@@ -1,6 +1,9 @@
 # My-3D-Portfolio
 # React + Vite
 
+![My 3D Portfolio Website](https://camo.githubusercontent.com/<hash>/https://imgur.com/29RkVI4)
+
+
 <ul>
     <li>
         <b>Programming Languages:</b> HTML5, Tailwind CSS
