@@ -1,5 +1,9 @@
 # My-3D-Portfolio
-# React + Vite
+
+<h2><a href="https://www.sally-lin.com/" color="blue" target="_blank" rel="nofollow">Personal Website</a></h2>
+
+<a href="https://www.sally-lin.com/">![My 3D Portfolio Website](https://i.imgur.com/29RkVI4.png)</a>
+
 
 <ul>
     <li>
@@ -17,7 +21,12 @@
     <li>
         <b>Build Tools:</b>Vite
     </li>
+    <li>
+        <b>Cloud & Hosting:</b> AWS (S3, CloudFront, Route 53, Certificate Manager)
+    </li>
 </ul>
+
+# React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
