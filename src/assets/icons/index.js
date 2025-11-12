@@ -55,6 +55,9 @@ import vscode from './vscode.svg'
 import vite from './vite.svg'
 import docker from './docker.svg'
 import gitlab from './gitlab.svg'
+import scikit_learn from './scikit_learn.svg'
+import pandas from './pandas.svg'
+import numpy from './numpy.svg'
 
 export {
     css,
@@ -113,5 +116,8 @@ export {
     vscode,
     vite,
     docker,
-    gitlab
+    gitlab,
+    scikit_learn,
+    pandas,
+    numpy
 }

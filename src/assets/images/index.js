@@ -9,6 +9,9 @@ import season from './season.svg'
 import ackuretta from './ackuretta.svg'
 import go1010 from './go1010.svg'
 import msi from './msi.svg'
+import iii from './iii.png'
+import tatung from './tatung.png'
+import wgu from './wgu.png' 
 
 export {
     hero,
@@ -21,5 +24,8 @@ export {
     season,
     ackuretta,
     go1010,
-    msi
+    msi,
+    iii,
+    tatung,
+    wgu
 }

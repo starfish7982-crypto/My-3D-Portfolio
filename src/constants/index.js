@@ -1,4 +1,4 @@
-import { outlier, season, ackuretta, go1010, msi } from "../assets/images";
+import { outlier, season, ackuretta, go1010, msi, iii, tatung, wgu} from "../assets/images";
 import {
     car,
     contact,
@@ -52,11 +52,29 @@ import {
     googlecalendar,
     vite,
     docker,
-    gitlab
+    gitlab,
+    scikit_learn,
+    pandas,
+    numpy
 
 } from "../assets/icons";
 
 export const skills = [
+     {
+        imageUrl: pandas,
+        name: "pandas",
+        type: "Backend",
+    },
+     {
+        imageUrl: numpy,
+        name: "Numpy",
+        type: "Backend",
+    },
+     {
+        imageUrl: scikit_learn,
+        name: "scikit-learn",
+        type: "Backend",
+    },
     {
         imageUrl: java,
         name: "Java",
@@ -296,7 +314,7 @@ export const experiences = [
         company_name: "Outlier",
         icon: outlier,
         iconBg: "#a2d2ff",
-        date: "Jun 2024 - Present",
+        date: "Jun 2024 - Aug 2024",
         points: [
             "Evaluate AI model responses, identify errors, and provide feedback for prompt alignment.",
             "Ensure high-quality, accurate AI outputs by correcting identified issues.",
@@ -419,4 +437,28 @@ export const projects = [
         link: 'https://github.com/adrianhajdin/project_ai_summarizer',
     }
     */
+];
+
+export const educations = [
+    {
+        school_name: 'Western Governors University',
+        degree: 'B.S. in Computer Science',
+        icon: wgu,
+        iconBg: "#a2d2ff",
+        date: "Oct 2025",
+    },
+     {
+        school_name: 'Institute for Information Industry (III)',
+        degree: 'Java Development Training Bootcamp',
+        icon: iii,
+        iconBg: "#a2d2ff",
+        date: "Jun 2016",
+    },
+    {
+        school_name: 'Tatung University',
+        degree: 'B.A. in Business Management',
+        icon: tatung,
+        iconBg: "#a2d2ff",
+        date: "Jan 2013",
+    },
 ];

@@ -2,7 +2,7 @@ import React from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import { skills ,experiences} from "../constants";
+import { skills ,experiences, educations} from "../constants";
 import CTA from "../components/CTA";
 
 const About = () => {
@@ -12,7 +12,7 @@ const About = () => {
         Hello, I'm <span className="blue-gradient_text font-semibold drop-shadow">Sally</span>
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>Software Engineer based in Rochester NY, with expertise in hands-on learning and application development.
+        <p>Computer Science graduate based in Rochester, NY, with hands-on experience in software and system development.
         </p>
       </div>
 
@@ -81,6 +81,52 @@ const About = () => {
                     </li>
                   ))}
                 </ul>
+              </VerticalTimelineElement>
+            ))}
+          </VerticalTimeline>
+        </div>
+      </div>
+       
+
+
+       <div className="py-16">
+        <h3 className="subhead-text">Education</h3>
+        <div className="mt-5 flex flex-col gap-3 text-slate-500">
+          <p>My education tells the story of my journey from business to technology. I'm driven by a passion for learning and building, starting with business fundamentals, diving deep into development at a bootcamp, and solidifying my expertise with a B.S. in Computer Science.
+          </p>
+        </div>
+        
+        <div className="mt-12 flex">
+          <VerticalTimeline>
+            {educations.map((education, index)=>(
+              <VerticalTimelineElement
+                key={education.school_name}
+                date={education.date}
+                icon={<div className="flex justify-center items-center w-full h-full">
+                  <img
+                    src={education.icon}
+                    alt={education.school_name}
+                    className="w-[60%] h-[60%] object-contain"
+                  />
+                </div>}
+                iconStyle={{background:education.iconBg}}
+                contentStyle={{
+                  borderBottom:'8px',
+                  borderStyle:'solid',
+                  borderBottomColor:education.iconBg,
+                  boxShadow:'none'
+                }}  
+              >
+                <div>
+                  <h3 className="text-black text-xl font-poppins font-semibold">
+                    {education.school_name}
+                  </h3>
+                  <p className="text-black-500 font-medium font-base"
+                  style={{margin:0}}>
+                    {education.degree}
+                  </p>
+                </div>
+
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>

@@ -9,24 +9,64 @@ import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
 import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
 
-  const [isRotating,setIsRotating] = useState(false);
+  const navigate = useNavigate();
+
+  const [isRotating,setIsRotating] = useState(true);
   const [currentStage,setCurrentStage] = useState(1);
   const [isPlayingMusic,setIsPlayingMusic] = useState(false);
 
+  const [countdown, setCountdown] = useState(10); 
+  const [showCountdown, setShowCountdown] = useState(false); 
+  
+
   useEffect(()=>{
     if(isPlayingMusic){
-      audioRef.current.play();
+      audioRef.current.play().catch((error) => {
+        console.log("Audio autoplay was blocked by the browser.", error);
+        setIsPlayingMusic(false); 
+      });
     }
     return()=>{
       audioRef.current.pause();
     }
   },[isPlayingMusic])
+
+  useEffect(() => {
+    const hasLanded = sessionStorage.getItem('hasLanded');
+
+    if (!hasLanded) {
+      setShowCountdown(true); 
+      setIsPlayingMusic(true)
+      const timer = setTimeout(() => {
+        navigate('/about');
+      }, 10000);
+
+      const countdownTimer = setInterval(() => {
+        setCountdown((prevCount) => {
+          if (prevCount <= 1) {
+            clearInterval(countdownTimer);
+            return 0;
+          }
+          return prevCount - 1;
+        });
+      }, 1000);
+
+      sessionStorage.setItem('hasLanded', 'true');
+      return () => {
+        clearTimeout(timer);
+        clearInterval(countdownTimer);
+      };
+    }
+  }, [navigate, setIsPlayingMusic]); 
+
+  
 
   const adjustIslandForScreenSize = ()=>{
     let screenScale = null;
@@ -59,6 +99,13 @@ const Home = () => {
 
   return (
     <section className="w-full h-screen relative">
+
+      {showCountdown && (
+        <div className="absolute top-16 left-1/2 -translate-x-1/2 z-20 bg-white/80 backdrop-blur-sm py-2 px-5 rounded-lg shadow-xl text-center">
+          <p>Redirecting to "About Me" in {countdown}s...</p>
+        </div>
+      )} 
+
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage}/>}
       </div>
