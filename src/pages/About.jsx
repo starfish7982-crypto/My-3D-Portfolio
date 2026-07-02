@@ -12,7 +12,7 @@ const About = () => {
         Hello, I'm <span className="blue-gradient_text font-semibold drop-shadow">Sally</span>
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>Computer Science graduate based in Rochester, NY, with hands-on experience in software and system development.
+        <p>Focusing on software development, data insights, and AI integration to create innovative, data-driven experiences.
         </p>
       </div>
 
@@ -92,7 +92,7 @@ const About = () => {
        <div className="py-16">
         <h3 className="subhead-text">Education</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
-          <p>My education tells the story of my journey from business to technology. I'm driven by a passion for learning and building, starting with business fundamentals, diving deep into development at a bootcamp, and solidifying my expertise with a B.S. in Computer Science.
+          <p>My background bridges the gap between business strategy and technical execution. After establishing a strong foundation in business and completing a coding bootcamp, I pursued a B.S. in Computer Science to master the craft of development. To stay at the forefront of the industry, I am now pursuing an M.S. in Computer Science at Georgia Tech (expected completion: Dec 2029), focusing on advanced technical challenges.
           </p>
         </div>
         
