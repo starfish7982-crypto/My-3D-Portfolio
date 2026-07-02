@@ -1,4 +1,4 @@
-import { outlier, season, ackuretta, go1010, msi, iii, tatung, wgu} from "../assets/images";
+import { outlier, season, ackuretta, go1010, msi, iii, tatung, wgu, GT} from "../assets/images";
 import {
     car,
     contact,
@@ -394,6 +394,13 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: estate,
+        theme: 'btn-back-pink',
+        name: 'House Price Prediction',
+        description: 'Developed an end-to-end house price prediction engine, engineering a system to automatically process CSV data, predict prices from user inputs, and quantify model performance using R-squared, RMSE, and MAE.',
+        link: 'https://github.com/starfish7982-crypto/Housing-Price-Prediction',
+    },
+    {
         iconUrl: summiz,
         theme: 'btn-back-red',
         name: 'My 3D Portfolio',
@@ -410,13 +417,20 @@ export const projects = [
     {
         iconUrl: estate,
         theme: 'btn-back-blue',
-        name: 'My E-commerce Business',
+        name: 'Book Store e-Commerce',
+        description: 'Designed and wireframed the complete user journey for “Book Haven,” a fictional e-commerce bookstore. Created responsive, high-fidelity mockups in Figma, focusing on an intuitive user flow from product discovery to final checkout.',
+        link: 'https://github.com/starfish7982-crypto/Book-Haven-Bookstore-Wireframe',
+    },
+    {
+        iconUrl: estate,
+        theme: 'btn-back-pink',
+        name: 'My e-Commerce Business',
         description: 'Developed a WordPress site for my own e-commerce business, optimizing the platform for SEO across various channels to enhance search visibility and drive higher revenue.',
         link: 'https://github.com/starfish7982-crypto/My-E-commerce-Business',
     },
     {
         iconUrl: snapgram,
-        theme: 'btn-back-pink',
+        theme: 'btn-back-red',
         name: 'Restaurant Management System',
         description: 'Developed a restaurant management system as part of our graduation project with a 6-person team, in collaboration with a software technology company.',
         link: 'https://github.com/starfish7982-crypto/III-Java-Training-Course',
@@ -440,6 +454,13 @@ export const projects = [
 ];
 
 export const educations = [
+    {
+        school_name: 'Georgia Institute of Technology',
+        degree: 'M.S. in Computer Science',
+        icon: GT,
+        iconBg: "#a2d2ff",
+        date: "Dec 2029",
+    },
     {
         school_name: 'Western Governors University',
         degree: 'B.S. in Computer Science',
