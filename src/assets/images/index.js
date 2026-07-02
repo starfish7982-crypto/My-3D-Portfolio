@@ -12,6 +12,8 @@ import msi from './msi.svg'
 import iii from './iii.png'
 import tatung from './tatung.png'
 import wgu from './wgu.png' 
+import GT from './GT.png'
+
 
 export {
     hero,
@@ -27,5 +29,6 @@ export {
     msi,
     iii,
     tatung,
-    wgu
+    wgu,
+    GT
 }

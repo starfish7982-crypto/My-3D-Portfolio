@@ -8,16 +8,11 @@ const Projects = () => {
   return (
     <section className="max-container">
       <h1 className="head-text">
-        My <span className="blue-gradient_text font-semibold drop-shadow">Projects</span>
+        Selected<span className="blue-gradient_text font-semibold drop-shadow"> Projects</span>
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-        Over the years, I have developed several projects that showcase my passion 
-        for software development and problem-solving. These projects reflect my skills 
-        and dedication to creating practical and innovative solutions. If you come across 
-        something that piques your interest, feel free to explore the codebase and contribute 
-        your ideas for further enhancements. Your collaboration is highly valued! 
-        If you have any questions or want to learn more, don't hesitate to reach out.
+          A selection of work spanning product design, data analysis, and full-stack engineering — each project reflects how I translate business needs into tangible outcomes. From ML pipelines and UX wireframes to production software serving 1,000+ devices, I focus on solutions that are intuitive for users and measurable for stakeholders.
         </p>
       </div>
 

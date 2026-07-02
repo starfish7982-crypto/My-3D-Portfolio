@@ -11,9 +11,27 @@ const About = () => {
       <h1 className="head-text">
         Hello, I'm <span className="blue-gradient_text font-semibold drop-shadow">Sally</span>
       </h1>
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>Computer Science graduate based in Rochester, NY, with hands-on experience in software and system development.
+      <div className="mt-5 flex flex-col gap-5 text-slate-500">
+        <p>
+          I build user-centered, data-driven products from concept to delivery — gathering requirements, designing intuitive interfaces, and shipping scalable software. With 6+ years across AI, manufacturing, and e-commerce, I work at the intersection of business strategy, product execution, and engineering.
         </p>
+        <div className="flex flex-wrap gap-3">
+          {[
+            "Requirements & Analysis",
+            "Product Strategy",
+            "Agile Delivery",
+            "UX & Prototyping",
+            "Full-Stack Engineering",
+            "Data-Driven Decisions",
+          ].map((strength) => (
+            <span
+              key={strength}
+              className="px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium"
+            >
+              {strength}
+            </span>
+          ))}
+        </div>
       </div>
 
       <div className="py-10 flex flex-col">
@@ -37,8 +55,8 @@ const About = () => {
       <div className="py-16">
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
-          <p>I've worked with all sorts of companies, leveling up my skills and
-            teaming up with smart people. Here's the rundown:
+          <p>
+            I've partnered with product managers, engineers, designers, and business stakeholders to deliver cross-functional initiatives with measurable impact. Here's the rundown:
           </p>
         </div>
         
@@ -92,7 +110,8 @@ const About = () => {
        <div className="py-16">
         <h3 className="subhead-text">Education</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
-          <p>My education tells the story of my journey from business to technology. I'm driven by a passion for learning and building, starting with business fundamentals, diving deep into development at a bootcamp, and solidifying my expertise with a B.S. in Computer Science.
+          <p>
+            My background bridges business strategy and technical execution — a B.A. in Business Management, a B.S. in Computer Science, and an ongoing M.S. in Computer Science at Georgia Tech (expected Dec 2028). Certified in Professional Scrum Master I (PSM I), ITIL 4, and CompTIA Security+/Network+.
           </p>
         </div>
         

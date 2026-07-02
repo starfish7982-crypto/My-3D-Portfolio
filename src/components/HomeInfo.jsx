@@ -17,28 +17,28 @@ const renderContent = {
         <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
             Hi, I am <span className="font-semibold">Sally</span> 👋
             <br/>
-            A Computer Science graduate from Rochester, NY.
+            Technical professional bridging product, engineering, and user experience.
         </h1>
     ),
     2:(
         <InfoBox
-            text = "Worked with many companies and picked up many skills along the way."
+            text = "6+ years turning business needs into shipped products across AI, manufacturing, and e-commerce."
             link="/about"
             btnText="Learn more"
         />
     ),
     3:(
         <InfoBox
-            text = "Led multiple projects to success over the years. Curious about the impact?"
+            text = "From requirements and wireframes to code and delivery — see the work behind $4M+ in impact."
             link="/projects"
-            btnText="Visit my portfolio"
+            btnText="View my work"
         />
     ),
     4:(
         <InfoBox
-            text = "Need a project done or looking for a dev? I'm just a few keystrokes away."
+            text = "Open to new opportunities. Let's connect and explore how I can help your team."
             link="/contact"
-            btnText="Let's talk"
+            btnText="Get in touch"
         />
     )
 }

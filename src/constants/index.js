@@ -1,4 +1,4 @@
-import { outlier, season, ackuretta, go1010, msi, iii, tatung, wgu} from "../assets/images";
+import { outlier, season, ackuretta, go1010, msi, iii, tatung, wgu, GT} from "../assets/images";
 import {
     car,
     contact,
@@ -316,9 +316,9 @@ export const experiences = [
         iconBg: "#a2d2ff",
         date: "Jun 2024 - Aug 2024",
         points: [
-            "Evaluate AI model responses, identify errors, and provide feedback for prompt alignment.",
-            "Ensure high-quality, accurate AI outputs by correcting identified issues.",
-            "Contribute to continuous AI training for better accuracy and efficiency.",
+            "Evaluated and improved 30+ LLM workflows across multiple domains, increasing reasoning consistency by 20%.",
+            "Partnered with cross-functional teams to identify quality gaps and improve model evaluation standards.",
+            "Documented testing procedures, evaluation metrics, and workflow improvements to support scalable AI development.",
         ],
     },
     {
@@ -328,10 +328,9 @@ export const experiences = [
         iconBg: "#FFFFFF",
         date: "Sep 2016 - Jun 2023",
         points: [
-            "Developed and managed a WordPress-based E-commerce platform to efficiently promote and sell clothing via Shopee,increasing website exposure and boosting sales by 25%, while enhancing the overall customer experience.",
-            "Automated the product listing process by creating web scraping scripts with Octoparse, reducing manual data entry time by 50% and significantly improving operational efficiency.",
-            "Designed and deployed a Python script to automatically process and crop images, enhancing product presentation and ensuring optimal display on the website, which improved user engagement.",
-            "Applied SEO strategies to the WordPress site, which doubled the number of followers, improved search engine rankings, and increased website traffic, leading to an enhanced user experience.",
+            "Built and managed a WordPress e-commerce platform end-to-end, increasing sales by 25% through SEO optimization and UX improvements.",
+            "Automated product listing workflows with Python scripts, reducing manual data entry time by 50%.",
+            "Designed and deployed image processing automation to improve product presentation and user engagement.",
         ],
     },
     {
@@ -341,10 +340,10 @@ export const experiences = [
         iconBg: "#e4c7ed",
         date: "Mar 2018 - Apr 2021",
         points: [
-            "Built a mobile-friendly web system from scratch with dynamic features using TypeScript and Angular.",
-            "Developed projects for 5 products, enhancing features and performance, ensuring optimized web experiences through RESTful API integration.",
-            "Reduced processing time for users by 50% through optimizing the 3D printing process on the website.",
-            "Designed wireframes and layouts that improved the user experience by utilizing SOA principles.",
+            "Delivered a cloud-connected 3D printing platform across 1,000+ devices, reducing deployment time by 40% and saving $500K.",
+            "Gathered requirements and designed UX for hardware-software interfaces using Figma and Axure, cutting user operation time by 30%.",
+            "Collaborated with product managers, firmware vendors, and five engineering teams to prioritize roadmaps and align delivery with business goals.",
+            "Introduced Agile workflows and CI/CD automation, improving release predictability and engineering throughput by 30%.",
         ],
     },
     {
@@ -354,9 +353,9 @@ export const experiences = [
         iconBg: "#b7e4c7",
         date: "Aug 2016 - Jul 2017",
         points: [
-            "Developed WordPress themes for corporate clients with design teams, boosting retention, user engagement, and brand consistency, while increasing new business by 10%.",
-            "Managed feature enhancements updates for a high-traffic site (10,000+ monthly visitors), using TortoiseSVN",
-            "Developed custom WordPress functionalities tailored to meet unique client needs, delivering pixel-perfect designs for e-commerce and content-heavy sites.",
+            "Led B2B e-commerce delivery by gathering customer requirements and coordinating implementation across engineering teams, increasing conversion by 25%.",
+            "Optimized database performance and front-end components, reducing page load latency by 30% and generating $150K+ in revenue.",
+            "Redesigned user flows and executed A/B testing on checkout workflows to improve conversion and user experience.",
         ],
     },
     {
@@ -366,10 +365,9 @@ export const experiences = [
         iconBg: "#a2d2ff",
         date: "Oct 2013 - Jun 2015",
         points: [
-            "Managed hardware equipment including memory, hard drives, motherboards, graphics cards, and CPUs, ensuring optimal performance.",
-            "Coordinated lab reservations to maximize resource utilization and minimize downtime.",
-            "Implemented efficient hardware management processes, leading to improved system reliability.",
-            "Facilitated seamless lab operations, contributing to enhanced project timelines and outcomes.",
+            "Co-designed an enterprise equipment management platform that digitized asset tracking, improving efficiency by 40% and safeguarding $3M+ in R&D assets.",
+            "Collaborated with cross-functional teams to analyze operational workflows and optimize resource allocation, improving system reliability by 35%.",
+            "Managed enterprise infrastructure supporting multiple R&D organizations across global markets.",
         ],
     }
 ];
@@ -394,31 +392,45 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: estate,
+        theme: 'btn-back-pink',
+        name: 'House Price Prediction',
+        description: 'Built an end-to-end ML pipeline for housing price prediction — performed EDA, feature engineering, and model evaluation (Linear Regression, Random Forest, XGBoost) to identify key price drivers and support data-driven decision-making.',
+        link: 'https://github.com/starfish7982-crypto/Housing-Price-Prediction',
+    },
+    {
         iconUrl: summiz,
         theme: 'btn-back-red',
         name: 'My 3D Portfolio',
-        description: 'Developed a 3D web portfolio using modern web technologies, including React, Vite, and Three.js. The portfolio showcases my projects with dynamic 3D elements.',
+        description: 'Designed and developed this interactive 3D portfolio using React, Vite, and Three.js — demonstrating full-stack frontend skills, responsive design, and modern web development practices.',
         link: 'https://github.com/starfish7982-crypto/My-3D-Portfolio',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
         name: '3D Printing Solutions for Healthcare',
-        description: 'Developed projects for 3D printing products, including dental molds, in collaboration with dental professionals.',
+        description: 'Contributed to cloud-connected 3D printing products for dental applications — gathering stakeholder requirements, designing dashboards, and delivering software serving 1,000+ production devices with 99.9% availability.',
         link: 'https://github.com/starfish7982-crypto/Ackuretta',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-blue',
-        name: 'My E-commerce Business',
-        description: 'Developed a WordPress site for my own e-commerce business, optimizing the platform for SEO across various channels to enhance search visibility and drive higher revenue.',
+        name: 'Book Store e-Commerce',
+        description: 'Designed the complete user journey for a fictional e-commerce bookstore. Created responsive, high-fidelity Figma mockups with intuitive flows from product discovery through checkout.',
+        link: 'https://github.com/starfish7982-crypto/Book-Haven-Bookstore-Wireframe',
+    },
+    {
+        iconUrl: estate,
+        theme: 'btn-back-pink',
+        name: 'My e-Commerce Business',
+        description: 'Built and managed a WordPress e-commerce business end-to-end — from product strategy and SEO optimization to automated workflows, driving a 25% increase in sales and operational efficiency.',
         link: 'https://github.com/starfish7982-crypto/My-E-commerce-Business',
     },
     {
         iconUrl: snapgram,
-        theme: 'btn-back-pink',
+        theme: 'btn-back-red',
         name: 'Restaurant Management System',
-        description: 'Developed a restaurant management system as part of our graduation project with a 6-person team, in collaboration with a software technology company.',
+        description: 'Led a 6-person cross-functional team to deliver a restaurant management system as a graduation project, coordinating requirements, design, and implementation with an industry partner.',
         link: 'https://github.com/starfish7982-crypto/III-Java-Training-Course',
     }
     /*,
@@ -440,6 +452,13 @@ export const projects = [
 ];
 
 export const educations = [
+    {
+        school_name: 'Georgia Institute of Technology',
+        degree: 'M.S. in Computer Science',
+        icon: GT,
+        iconBg: "#a2d2ff",
+        date: "Dec 2028",
+    },
     {
         school_name: 'Western Governors University',
         degree: 'B.S. in Computer Science',

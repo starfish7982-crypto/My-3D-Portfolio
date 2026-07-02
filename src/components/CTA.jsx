@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const CTA = () => {
   return (
     <section className='cta'>
-      <p className="cta-text">Have a project in mind? <br className="sm:block hidden"/>
-      Let's build something together!
+      <p className="cta-text">Interested in working together? <br className="sm:block hidden"/>
+      I'd love to hear from you.
       </p>
       <Link to="/contact" className="btn">
         Contact
