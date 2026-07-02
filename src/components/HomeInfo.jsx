@@ -17,7 +17,7 @@ const renderContent = {
         <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
             Hi, I am <span className="font-semibold">Sally</span> 👋
             <br/>
-            A Computer Science graduate from Rochester, NY.
+            Software Developer, focusing on AI and Data-driven solutions.
         </h1>
     ),
     2:(
