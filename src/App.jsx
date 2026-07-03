@@ -1,7 +1,7 @@
 
 
-import { Route,BrowserRouter as Router,Routes } from 'react-router-dom';
-import { Home,About,Projects,Contact } from './pages';
+import { Route, BrowserRouter as Router, Routes, Navigate } from 'react-router-dom';
+import { Home, About, Design, Projects, Contact, BookHavenCaseStudy, CurieCaseStudy } from './pages';
 import { Navbar } from './components/Navbar.jsx';
 
 const App = () => {
@@ -12,8 +12,14 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
+          <Route path="/design" element={<Design/>}/>
+          <Route path="/design/book-haven" element={<BookHavenCaseStudy/>}/>
+          <Route path="/design/curie" element={<CurieCaseStudy/>}/>
           <Route path="/projects" element={<Projects/>}/>
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="/work" element={<Navigate to="/design" replace />}/>
+          <Route path="/work/book-haven" element={<Navigate to="/design/book-haven" replace />}/>
+          <Route path="/work/curie" element={<Navigate to="/design/curie" replace />}/>
         </Routes>
       </Router>
     </main>

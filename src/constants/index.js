@@ -390,7 +390,7 @@ export const socialLinks = [
     }
 ];
 
-export const projects = [
+export const technicalProjects = [
     {
         iconUrl: estate,
         theme: 'btn-back-pink',
@@ -408,16 +408,9 @@ export const projects = [
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: '3D Printing Solutions for Healthcare',
-        description: 'Contributed to cloud-connected 3D printing products for dental applications — gathering stakeholder requirements, designing dashboards, and delivering software serving 1,000+ production devices with 99.9% availability.',
+        name: 'Ackuretta Platform',
+        description: 'Contributed to cloud-connected 3D printing software for dental applications — see the CURIE design case study for the interface deep dive.',
         link: 'https://github.com/starfish7982-crypto/Ackuretta',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-blue',
-        name: 'Book Store e-Commerce',
-        description: 'Designed the complete user journey for a fictional e-commerce bookstore. Created responsive, high-fidelity Figma mockups with intuitive flows from product discovery through checkout.',
-        link: 'https://github.com/starfish7982-crypto/Book-Haven-Bookstore-Wireframe',
     },
     {
         iconUrl: estate,
@@ -432,24 +425,11 @@ export const projects = [
         name: 'Restaurant Management System',
         description: 'Led a 6-person cross-functional team to deliver a restaurant management system as a graduation project, coordinating requirements, design, and implementation with an industry partner.',
         link: 'https://github.com/starfish7982-crypto/III-Java-Training-Course',
-    }
-    /*,
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
     },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
-    */
 ];
+
+/** @deprecated Use technicalProjects — kept for backward compatibility */
+export const projects = technicalProjects;
 
 export const educations = [
     {

@@ -30,8 +30,8 @@ const renderContent = {
     3:(
         <InfoBox
             text = "From requirements and wireframes to code and delivery — see the work behind $4M+ in impact."
-            link="/projects"
-            btnText="View my work"
+            link="/design"
+            btnText="View case studies"
         />
     ),
     4:(
