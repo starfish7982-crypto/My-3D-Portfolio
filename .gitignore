@@ -25,3 +25,5 @@ dist-ssr
 
 #EmailJS
 .env.local
+# Python venv
+venv/

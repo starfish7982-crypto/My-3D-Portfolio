@@ -12,6 +12,9 @@ import { a } from "@react-spring/three";
 
 import islandScene from "../assets/3d/island.glb";
 
+// 讓瀏覽器在頁面一載入就開始下載模型,不用等元件掛載
+useGLTF.preload(islandScene);
+
 const Island = ({ isRotating,setIsRotating,setCurrentStage, ...props}) => {
   const islandRef = useRef();
 

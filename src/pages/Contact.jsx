@@ -20,7 +20,7 @@ const Contact = () => {
   const handleChange = (e) =>{
     setForm({...form,[e.target.name]:e.target.value})
   };
-  const handleSumit = (e)=>{
+  const handleSubmit = (e)=>{
     e.preventDefault();
     setIsLoading(true);
     setCurrentAnimation('hit');
@@ -63,7 +63,7 @@ const Contact = () => {
         <h1 className="head-text">Get in Touch</h1>
 
         <form className="w-full flex flex-col gap-7 mt-14"
-          onSubmit={handleSumit}
+          onSubmit={handleSubmit}
         >
           <label className="text-black-500 font-semibold">
             Name
@@ -108,7 +108,7 @@ const Contact = () => {
             />
           </label>
           <button
-            type="sumit"
+            type="submit"
             className="btn"
             disabled={isLoading}
             onFocus={handleFocus}

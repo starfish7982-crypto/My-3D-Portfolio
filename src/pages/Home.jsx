@@ -1,6 +1,6 @@
 
-import { Suspense, useState , useEffect , useRef} from "react";
-import { Canvas} from '@react-three/fiber';
+import { Suspense, useState, useRef, useEffect } from "react";
+import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
 import Island from "../models/Island";
 import Sky from "../models/Sky";
@@ -9,144 +9,104 @@ import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
 import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";
-import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
 
-  const navigate = useNavigate();
-
-  const [isRotating,setIsRotating] = useState(true);
-  const [currentStage,setCurrentStage] = useState(1);
-  const [isPlayingMusic,setIsPlayingMusic] = useState(false);
-
-  const [countdown, setCountdown] = useState(10); 
-  const [showCountdown, setShowCountdown] = useState(false); 
-  
-
-  useEffect(()=>{
-    if(isPlayingMusic){
-      audioRef.current.play().catch((error) => {
-        console.log("Audio autoplay was blocked by the browser.", error);
-        setIsPlayingMusic(false); 
-      });
-    }
-    return()=>{
-      audioRef.current.pause();
-    }
-  },[isPlayingMusic])
+  const [isRotating, setIsRotating] = useState(true);
+  const [currentStage, setCurrentStage] = useState(1);
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
 
   useEffect(() => {
-    const hasLanded = sessionStorage.getItem('hasLanded');
-
-    if (!hasLanded) {
-      setShowCountdown(true); 
-      setIsPlayingMusic(true)
-      const timer = setTimeout(() => {
-        navigate('/about');
-      }, 10000);
-
-      const countdownTimer = setInterval(() => {
-        setCountdown((prevCount) => {
-          if (prevCount <= 1) {
-            clearInterval(countdownTimer);
-            return 0;
-          }
-          return prevCount - 1;
-        });
-      }, 1000);
-
-      sessionStorage.setItem('hasLanded', 'true');
-      return () => {
-        clearTimeout(timer);
-        clearInterval(countdownTimer);
-      };
+    if (isPlayingMusic) {
+      audioRef.current.play().catch((error) => {
+        console.log("Audio playback was blocked by the browser.", error);
+        setIsPlayingMusic(false);
+      });
+    } else {
+      audioRef.current.pause();
     }
-  }, [navigate, setIsPlayingMusic]); 
 
-  
+    return () => {
+      audioRef.current.pause();
+    };
+  }, [isPlayingMusic]);
 
-  const adjustIslandForScreenSize = ()=>{
+  const adjustIslandForScreenSize = () => {
     let screenScale = null;
-    let screenPosition = [0,-6.5,-43];
-    let rotation = [0.1,4.7,0];
+    const screenPosition = [0, -6.5, -43];
+    const rotation = [0.1, 4.7, 0];
 
-    if(window.innerWidth < 768){
-      screenScale = [0.9,0.9,0.9];
-    }else{
-      screenScale = [1,1,1];
+    if (window.innerWidth < 768) {
+      screenScale = [0.9, 0.9, 0.9];
+    } else {
+      screenScale = [1, 1, 1];
     }
-    return [screenScale,screenPosition,rotation];
-  }
+    return [screenScale, screenPosition, rotation];
+  };
 
-  const adjustPlaneForScreenSize = ()=>{
-    let screenScale,screenPosition;
+  const adjustPlaneForScreenSize = () => {
+    let screenScale;
+    let screenPosition;
 
-    if(window.innerWidth < 768){
-      screenScale = [1.5,1.5,1.5];
-      screenPosition = [0,-1.5,0];
-    }else{
-      screenScale = [3,3,3];
-      screenPosition = [0,-4,-4];
+    if (window.innerWidth < 768) {
+      screenScale = [1.5, 1.5, 1.5];
+      screenPosition = [0, -1.5, 0];
+    } else {
+      screenScale = [3, 3, 3];
+      screenPosition = [0, -4, -4];
     }
-    return [screenScale,screenPosition];
-  }
+    return [screenScale, screenPosition];
+  };
 
-  const [islandScale,islandPosition,islandRotation] = adjustIslandForScreenSize();
-  const [planeScale,planePosition] = adjustPlaneForScreenSize();
+  const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize();
+  const [planeScale, planePosition] = adjustPlaneForScreenSize();
 
   return (
     <section className="w-full h-screen relative">
-
-      {showCountdown && (
-        <div className="absolute top-16 left-1/2 -translate-x-1/2 z-20 bg-white/80 backdrop-blur-sm py-2 px-5 rounded-lg shadow-xl text-center">
-          <p>Redirecting to "About Me" in {countdown}s...</p>
-        </div>
-      )} 
-
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-        {currentStage && <HomeInfo currentStage={currentStage}/>}
+        {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
-      <Canvas 
-      className={`w-full h-screen bg-transparent ${isRotating?'cursor-grabbing':'cursor-grab'}`}
-      camera={{near:0.1,far:1000}}
+      <Canvas
+        className={`w-full h-screen bg-transparent ${isRotating ? "cursor-grabbing" : "cursor-grab"}`}
+        camera={{ near: 0.1, far: 1000 }}
       >
-      <Suspense fallback={<Loader/>}>
-        <directionalLight position={[1,1,1]} intensity={2}/>
-        <ambientLight intensity={0.5}/>
-        <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={1}/>
-        <Bird/>
-        <Sky isRotating={isRotating}/>
-        <Island
-          position = {islandPosition}
-          scale = {islandScale}
-          rotation = {islandRotation}
-          isRotating = {isRotating}
-          setIsRotating = {setIsRotating}
-          setCurrentStage = {setCurrentStage}
-        />
-        <Plane
-          isRotating = {isRotating} 
-          scale = {planeScale}
-          position = {planePosition}
-          rotation = {[0,20,0]}
-        />
-      </Suspense>
+        <Suspense fallback={<Loader />}>
+          <directionalLight position={[1, 1, 1]} intensity={2} />
+          <ambientLight intensity={0.5} />
+          <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={1} />
+          <Bird />
+          <Sky isRotating={isRotating} />
+          <Island
+            position={islandPosition}
+            scale={islandScale}
+            rotation={islandRotation}
+            isRotating={isRotating}
+            setIsRotating={setIsRotating}
+            setCurrentStage={setCurrentStage}
+          />
+          <Plane
+            isRotating={isRotating}
+            scale={planeScale}
+            position={planePosition}
+            rotation={[0, 20, 0]}
+          />
+        </Suspense>
       </Canvas>
 
       <div className="absolute bottom-2 left-2">
         <img
-          src={!isPlayingMusic ? soundoff : soundon }
-          alt="sound"
+          src={!isPlayingMusic ? soundoff : soundon}
+          alt={isPlayingMusic ? "Mute music" : "Play music"}
           className="w-10 h-10 cursor-pointer object-contain"
-          onClick={()=>setIsPlayingMusic(!isPlayingMusic)}
+          onClick={() => setIsPlayingMusic(!isPlayingMusic)}
         />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
