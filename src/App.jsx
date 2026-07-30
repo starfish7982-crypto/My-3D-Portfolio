@@ -11,6 +11,7 @@ const App = () => {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
+          <Route path="/index.html" element={<Navigate to="/" replace />}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/design" element={<Design/>}/>
           <Route path="/design/book-haven" element={<BookHavenCaseStudy/>}/>
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/work" element={<Navigate to="/design" replace />}/>
           <Route path="/work/book-haven" element={<Navigate to="/design/book-haven" replace />}/>
           <Route path="/work/curie" element={<Navigate to="/design/curie" replace />}/>
+          <Route path="*" element={<Navigate to="/" replace />}/>
         </Routes>
       </Router>
     </main>
