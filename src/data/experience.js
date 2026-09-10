@@ -18,7 +18,7 @@ export const experiences = [
         company_name: "SEason",
         icon: season,
         iconBg: "#FFFFFF",
-        date: "Sep 2016 - Jun 2023",
+        date: "Apr 2021 - Jun 2023",
         points: [
             "Built and managed a WordPress e-commerce platform end-to-end, increasing sales by 25% through SEO optimization and UX improvements.",
             "Automated product listing workflows with Python scripts, reducing manual data entry time by 50%.",
